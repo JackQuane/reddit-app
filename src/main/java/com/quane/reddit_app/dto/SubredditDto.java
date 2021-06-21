@@ -14,4 +14,8 @@ public class SubredditDto {
     private String name;
     private String description;
     private Integer numberOfPosts;
+
+    public void setNumberOfPosts(Integer numberOfPosts) {
+        this.numberOfPosts = numberOfPosts;
+    }
 }

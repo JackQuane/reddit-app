@@ -31,4 +31,8 @@ public class Subreddit {
     private Instant createdDate;
     @ManyToOne(fetch = LAZY)
     private User user;
+
+    public void setPosts(List<Post> posts) {
+        this.posts = posts;
+    }
 }
