@@ -2,6 +2,7 @@ package com.quane.reddit_app.controller;
 
 import com.quane.reddit_app.dto.PostRequest;
 import com.quane.reddit_app.dto.PostResponse;
+import com.quane.reddit_app.model.Post;
 import com.quane.reddit_app.service.PostService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -11,17 +12,17 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/posts")
+@RequestMapping("/api/posts/")
 @AllArgsConstructor
 public class PostController {
 
     private final PostService postService;
 
     @PostMapping
-    public ResponseEntity<Void> createPost(@RequestBody PostRequest postRequest) {
-        postService.save(postRequest);
-        return new ResponseEntity<>(HttpStatus.CREATED);
-//        return ResponseEntity.status(HttpStatus.CREATED).body(null);
+    public ResponseEntity<Post> createPost(@RequestBody PostRequest postRequest) {
+        Post post = postService.save(postRequest);
+//        return new ResponseEntity<>(HttpStatus.CREATED);
+        return ResponseEntity.status(HttpStatus.CREATED).body(post);
     }
 
     @GetMapping

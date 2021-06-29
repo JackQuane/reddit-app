@@ -17,15 +17,17 @@ public class PostResponse {
     private String subredditName;
     private Integer voteCount;
     private Integer commentCount;
+    //e.g. 4 minutes ago
+    //uses a Kotlin time ago plugin
     private String duration;
     private boolean upVote;
     private boolean downVote;
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public void setSubredditName(String subredditName) {
-        this.subredditName = subredditName;
-    }
+//    public void setId(Long id) {
+//        this.id = id;
+//    }
+//
+//    public void setSubredditName(String subredditName) {
+//        this.subredditName = subredditName;
+//    }
 }

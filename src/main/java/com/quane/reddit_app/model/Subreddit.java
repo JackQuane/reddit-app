@@ -32,7 +32,7 @@ public class Subreddit {
     @ManyToOne(fetch = LAZY)
     private User user;
 
-    public void setPosts(List<Post> posts) {
-        this.posts = posts;
-    }
+//    public void setPosts(List<Post> posts) {
+//        this.posts = posts;
+//    }
 }

@@ -38,19 +38,19 @@ public class Post {
     @JoinColumn(name = "id", referencedColumnName = "id")
     private Subreddit subreddit;
 
-    public void setCreatedDate(Instant createdDate) {
-        this.createdDate = createdDate;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public Long getPostId() {
-        return postId;
-    }
-
-    public Subreddit getSubreddit() {
-        return subreddit;
-    }
+//    public void setCreatedDate(Instant createdDate) {
+//        this.createdDate = createdDate;
+//    }
+//
+//    public void setDescription(String description) {
+//        this.description = description;
+//    }
+//
+//    public Long getPostId() {
+//        return postId;
+//    }
+//
+//    public Subreddit getSubreddit() {
+//        return subreddit;
+//    }
 }

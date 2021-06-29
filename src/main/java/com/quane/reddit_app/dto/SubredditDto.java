@@ -15,7 +15,7 @@ public class SubredditDto {
     private String description;
     private Integer numberOfPosts;
 
-    public void setNumberOfPosts(Integer numberOfPosts) {
-        this.numberOfPosts = numberOfPosts;
-    }
+//    public void setNumberOfPosts(Integer numberOfPosts) {
+//        this.numberOfPosts = numberOfPosts;
+//    }
 }
